@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+
+{% block container %}
+    <div class="card bg-light mb-3">
+        <h5 class="card-header" style="text-align: center;">UploadFile</h5>
+        <div class="card-body">
+            <form method="POST" action="{% url "uploadfile" %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div style="text-align: center;">
+                <input class="btn btn-secondary" type="submit" value="UploadFile" id="saveBtn">
+                </div>
+            </form>
+        </div>
+  </div>
+
+    
+
+{% endblock %}

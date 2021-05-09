@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+{% block container %}
+    <h1>View UploadFile</h1>
+    <table class="table table-hover table-striped table-bordered nowrap">
+        <thead class="thead-light">
+          <tr>
+            <th style="text-align: center;">ID</th>
+            <th style="text-align: center;">Name</th>
+            <th style="text-align: center;">Date</th>
+            <th style="text-align: center;">File Path</th>
+            <th style="text-align: center;">Summary</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for file in view_uploadfile %}
+            <tr>
+                <td style="text-align: center;">{{ file.id }}</td>
+                <td style="text-align: center;">{{ file.name }}</td>
+                <td>{{ file.date }}</td>
+                <td>{{ file.file_path }}</td>
+                <td>{{ file.summary }}</td>
+              </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+{% endblock %}

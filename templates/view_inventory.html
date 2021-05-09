@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+
+
+{% block container %}
+    <h1>Inventory</h1>
+    <table class="table table-hover table-striped table-bordered nowrap">
+        <thead class="thead-light">
+          <tr>
+            <th style="text-align: center;">ID</th>
+            <th style="text-align: center;">Serial</th>
+            <th style="text-align: center;">Quantity</th>
+            <th style="text-align: center;">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for inventory in view_inventory %}
+            <tr>
+                <td style="text-align: center;">{{ inventory.id }}</td>
+                <td style="text-align: center;">{{ inventory.serial_number }}</td>
+                <td style="text-align: center;">{{ inventory.quantity }}</td>
+                <td style="text-align: right;">{{ inventory.price }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
