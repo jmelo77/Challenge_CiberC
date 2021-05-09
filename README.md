@@ -1,6 +1,6 @@
 #Challenge CiberC
 
-[![CiberC](https://www.ciberc.com/wp-content/uploads/2019/12/LOGO-FINAL-CIBERC-Blanco-1024x373.png)](https://www.ciberc.com)
+[![CiberC](https://i0.wp.com/portalgeek.co/wp-content/uploads/2018/11/CiberC.jpg?resize=715%2C400&ssl=1)](https://www.ciberc.com)
 
 # Prerequisites
 - [virtualenv](https://virtualenv.pypa.io/en/latest/)
